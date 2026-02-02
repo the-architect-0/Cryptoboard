@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakes Island Crypto Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-skull"></i>Zakes Island Crypto Dashboard</h1>
+            <p>Real-time cryptocurrency prices, market caps, and trading volumes from the top 100 coins. Data provided by CoinGecko API.</p>
+        </header>
+        
+        <div class="controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search cryptocurrencies...">
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="gainers">Top Gainers</button>
+                <button class="filter-btn" data-filter="losers">Top Losers</button>
+                <button class="filter-btn" data-filter="volume">High Volume</button>
+            </div>
+            
+            <button class="refresh-btn" id="refreshBtn">
+                <i class="fas fa-sync-alt"></i> Refresh Data
+            </button>
+        </div>
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <h3>Total Market Cap</h3>
+                <div class="stat-value" id="totalMarketCap">Loading...</div>
+            </div>
+            <div class="stat-item">
+                <h3>Total Volume (24h)</h3>
+                <div class="stat-value" id="totalVolume">Loading...</div>
+            </div>
+            <div class="stat-item">
+                <h3>Top Gainer (24h)</h3>
+                <div class="stat-value" id="topGainer">Loading...</div>
+            </div>
+            <div class="stat-item">
+                <h3>Active Cryptocurrencies</h3>
+                <div class="stat-value" id="activeCryptos">100</div>
+            </div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading cryptocurrency data from CoinGecko API...</p>
+        </div>
+        
+        <div class="error" id="error" style="display: none;">
+            <h2><i class="fas fa-exclamation-triangle"></i> Error Loading Data</h2>
+            <p>Unable to fetch data from CoinGecko API. Please try again later.</p>
+            <button class="refresh-btn" style="margin-top: 20px;" id="retryBtn">
+                <i class="fas fa-redo"></i> Retry
+            </button>
+        </div>
+        
+        <div class="crypto-grid" id="cryptoGrid">
+            <!-- Crypto cards will be dynamically inserted here -->
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Pagination buttons will be dynamically inserted here -->
+        </div>
+        
+        <footer>
+            <p>Data provided by <a href="https://www.coingecko.com/" target="_blank" style="color: #00c9ff;">CoinGecko API</a> | Updated in real-time</p>
+            <p style="margin-top: 5px;">This dashboard displays the top 100 cryptocurrencies by market capitalization.</p>
+        </footer>
+    </div>
+
+    <script src='main.js'>
+        // Global variables
+        
+    </script>
+</body>
+</html>
