@@ -16,8 +16,7 @@ Real-time crypto prices, market stats, and *portfolio tracking* — built with p
 
 ## 🚀 Demo
 
-→ [Live Demo](https://the-architect-0.github.io/Cryptoboard/)  
-*(Deploy to GitHub Pages and update this link)*
+→ [clock here](https://the-architect-0.github.io/Cryptoboard/)  
 
 ## 🛠️ Tech Stack
 
