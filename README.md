@@ -3,9 +3,6 @@
 **Modern, lightweight cryptocurrency dashboard**  
 Real-time crypto prices, market stats, and *portfolio tracking* — built with pure HTML, CSS, and JavaScript.
 
-![Crypto Dashboard Preview](https://via.placeholder.com/800x450/1a1a2e/ffffff?text=Cryptoboard+Preview)  
-*(Add a real screenshot here later – recommended size: ~1200×800)*
-
 ## ✨ Features
 
 - Real-time price tracking for major cryptocurrencies (BTC, ETH, SOL, XRP, etc.)
